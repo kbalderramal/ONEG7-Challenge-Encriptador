@@ -26,23 +26,12 @@ Este proyecto es una aplicación web diseñada para encriptar y desencriptar tex
 + **JavaScript** para la lógica de la encriptación.
 + **GitHub Pages** para el despliegue de la aplicación.
 
-## Estructura del proyecto
-assets/
-├── img/
-│   ├── alura-logo.png
-│   ├── exclamation-sign.png
-│   └── person-waiting.png
-├── styles/
-│   └── index.css
-├── app.js
-└── index.html
-
 ## ¿Cómo funiona el encriptador?
 El algoritmo es sumamente simple. Remplazar las vocales por una serie de caracteres predefinidos. 
 
 **Llaves de encriptación:**
-La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
++ La letra "e" es convertida para "enter"
++ La letra "i" es convertida para "imes"
++ La letra "a" es convertida para "ai"
++ La letra "o" es convertida para "ober"
++ La letra "u" es convertida para "ufat"
