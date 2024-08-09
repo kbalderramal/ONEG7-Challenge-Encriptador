@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
     <title>Challenge: Encriptador</title>
 </head>
 
@@ -16,9 +17,9 @@
     
     <section>
         <div>
-            <label>input text goes here</label>
+            <label id="input-label">input text goes here</label>
         
-            <textarea name="" id="" rows="30" cols="70"></textarea>            
+            <textarea id="input-text" rows="30" cols="70" ></textarea>            
         </div>
 
         
@@ -28,28 +29,26 @@
         </div>
         
         <div>
-        <button>
+        <button id="encrypt-button" onclick="getInput()">
             <p>Encriptar</p>
         </button>
         
-        <button>
+        <button id="decrypt-button">
             <p>Desencriptar</p>
         </button>             
         </div>
     </section>
     
     <section>
-        <p>output text</p>
+        <img src="" alt="Persona esperando a que realices alguna acción" id="waitng-img">
         
-        <img src="" alt="Persona esperando a que realices alguna acción">
+        <textarea id="output-area" rows="30" cols="70" ></textarea>
         
-        <textarea name="" id="" rows="30" cols="70"></textarea>
+        <h3 id="no-input-title">Ningún mensaje fue encontrado</h3>
         
-        <h3>Ningún mensaje fue encontrado</h3>
+        <p id="no-input-text">Ingresa el texto que desees encriptar o desencriptar.</p>
         
-        <h4>Ingresa el texto que desees encriptar o desencriptar.</h4>
-        
-        <button>
+        <button id="copy-button">
             <p>Copiar</p>
         </button>
     </section>
