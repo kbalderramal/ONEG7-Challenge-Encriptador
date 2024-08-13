@@ -69,13 +69,33 @@ function decrypt() {
     document.getElementById("output-area").textContent = `${decryptText}`; 
 }
 
+// Copiar a portapapeles el texto transformado
+function copy() {
+    // Obtener el elemento textarea con el id "output-area"
+    let copyText = document.getElementById("output-area");
+
+    // Seleccionar el texto dentro del textarea
+    copyText.select();
+    
+    // Ajustar el rango de selección para asegurarse de que todo el texto se seleccione
+    // (particularmente útil en dispositivos móviles)
+    copyText.setSelectionRange(0, 99999); // Para dispositivos móviles
+
+    // Copiar el texto seleccionado al portapapeles
+    navigator.clipboard.writeText(copyText.value);
+}
+
+
 // TODO: 
 // [ x ] get input function
 // [ x ] input validation function 
-// [ ] clear input textarea 
 // [ x ] encrypt text function
 // [ x ] decrypt message function
-// [ ] copy button function
+// [ x ] copy button function
+// [ ] cambiar a rojo el margen del textarea input en error y el texto de instucción
+// [ ] cambiar texto de color copiar a copiado tras seleccionarlo
+// [ ] agregar disclaimer por fallos en la encriptación/desencriptación
+// [ ] agregar sección de comentarios
 
 
 
