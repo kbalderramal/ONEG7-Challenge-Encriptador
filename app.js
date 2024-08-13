@@ -25,7 +25,7 @@ function inputValidation(message) {
     }
 }
 
-// Encriptar texto según los parametrós establecidos en el reto
+// Encriptar texto según los parametros establecidos en el reto
 function encrypt() {
 
     // Permitir la ejecución del resto de la función solo si se cumple con lo establecido
@@ -46,12 +46,27 @@ function encrypt() {
 
     // Imprimir en el textarea correspondiente el resultado
     document.getElementById("output-area").textContent = `${encriptedText}`; 
-    return encriptedText;
 }
 
-// 
+// Desencriptar texto según los parámetros establecidos en el reto
 function decrypt() {
-    // return decryptText;
+    // Permitir la ejecución del resto de la función solo si se cumple con lo establecido
+    if (!getInput()) {
+        alert("Mensaje inválido\nIngrese solo letras minúsculas y sin acentos");
+        return;  // Detener la ejecución si el mensaje es inválido
+    }
+
+    decryptText = inputMessage;
+
+    // Por cada fragmento encriptado remplezar por la respectiva vocal
+    decryptText = decryptText.replace(/enter/g, "e");
+    decryptText = decryptText.replace(/imes/g, "i");
+    decryptText = decryptText.replace(/ai/g, "a");
+    decryptText = decryptText.replace(/ober/g, "o");
+    decryptText = decryptText.replace(/ufat/g, "u");
+
+    // Imprimir en el textarea correspondiente el resultado
+    document.getElementById("output-area").textContent = `${decryptText}`; 
 }
 
 // TODO: 
@@ -59,7 +74,7 @@ function decrypt() {
 // [ x ] input validation function 
 // [ ] clear input textarea 
 // [ x ] encrypt text function
-// [ ] decrypt message function
+// [ x ] decrypt message function
 // [ ] copy button function
 
 
