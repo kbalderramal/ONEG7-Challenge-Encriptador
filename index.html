@@ -19,7 +19,7 @@
         <div>
             <label id="input-label">input text goes here</label>
         
-            <textarea id="input-text" rows="30" cols="70" ></textarea>            
+            <textarea id="input-text" rows="30" cols="70" placeholder="Ingrese el texto aqui"></textarea>            
         </div>
 
         
@@ -29,11 +29,11 @@
         </div>
         
         <div>
-        <button id="encrypt-button" onclick="getInput()">
+        <button id="encrypt-button" onclick="encrypt()">
             <p>Encriptar</p>
         </button>
         
-        <button id="decrypt-button">
+        <button id="decrypt-button" onclick="decrypt()">
             <p>Desencriptar</p>
         </button>             
         </div>
@@ -42,11 +42,11 @@
     <section>
         <img src="" alt="Persona esperando a que realices alguna acción" id="waitng-img">
         
-        <textarea id="output-area" rows="30" cols="70" ></textarea>
+        <textarea id="output-area" rows="30" cols="70" placeholder="Ningún mensaje fue encontrado Ingresa el texto que desees encriptar o desencriptar."></textarea>
         
-        <h3 id="no-input-title">Ningún mensaje fue encontrado</h3>
+        <!-- <h3 id="no-input-title">Ningún mensaje fue encontrado</h3> -->
         
-        <p id="no-input-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <!-- <p id="no-input-text">Ingresa el texto que desees encriptar o desencriptar.</p> -->
         
         <button id="copy-button">
             <p>Copiar</p>
