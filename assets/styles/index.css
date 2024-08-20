@@ -1,4 +1,6 @@
+/* importación de tipografía inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 /* Reseteo */
 * {
@@ -11,6 +13,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
 
 /* Varibles */
 :root{
@@ -26,14 +29,16 @@ a{
     background-color: var(--ligth-blue);    
 }
 
+
 /* Encabezado y barra de navegación */
 .header{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5% 0% 1.5% 0%;
+    padding: 1% 0% 1% 0%;
     color: var(--dark-blue);
+    box-shadow: 0 5px 30px var(--gray);
 }
 
 .logo{
@@ -53,32 +58,56 @@ a{
     white-space: nowrap;
 }
 
-/* .navbar__link:hover{
-    border: 2px solid var(--dark-blue); 
-    border-radius: 4px; 
-} */
-
-/* .navbar__link:active{
-    color: var(--gray);
-} */
-
-/* sección del texto de entrada */
-.input_section{
-    background-color:violet ;
-
+.navbar__link:hover{
+    font-weight: bolder;
 }
 
 
-/* sección del texto de salida */
-.output_section{
-    background-color: palevioletred;
+/* cuerpo de la página */
+.main__box{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1% 0% 0% 0%;
+    gap: 3%;
+}
 
+/* sección del texto de entrada */
+.input__section{
+    background-color: greenyellow;
+    max-width: 60%;
+}
+
+.input__area{
+
+}
+
+.inputs__text__area{
+    font-family: 'Inter', 'Arial', 'Helvetica', 'sans-serif';
+    color: var(--dark-blue);
+    border: none;
+    background-color: var(--ligth-blue);
+    resize: none;
+    border-radius: 5%;
+    padding: 5%;
+    /* font-size: ; */
+}
+
+/* sección del texto de salida */
+.output__section{
+    background-color: palevioletred;
+    max-width: 40%;
 }
 
 
 /* pie de pagina */
 .footer{
-    background-color: greenyellow;
+    background-color: var(--ligth-blue);
+    color: var(--gray);
     text-align: center;
-    padding: 1vh;
+    padding: 1.5vh;
 }
+
+/* TODO */
+/* [ ] decoración al hover de los enlaces y botones */
+/* [ ] responsividad */
+/* [ ] sombreado del header */

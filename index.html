@@ -22,42 +22,43 @@
         </nav>
     </header>
     
-    <section class="input_section">
-        <div>
-            <textarea id="input-text" rows="30" cols="70" placeholder="Ingrese el texto aqui"></textarea>            
-        </div>
+    <div class="main__box">
+        <section class="input__section">
+            <div class="input__area">
+                <textarea id="input-text" rows="30" cols="70" placeholder="Ingrese el texto aqui" class="inputs__text__area"></textarea>            
+            </div>
+            
+            <div class="details">
+                <img src="assets/img/exclamation-sing.png" alt="Signo de exclamación" class="icon">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            
+            <div class="buttons__area">
+            <button id="encrypt-button" onclick="encrypt()">
+                <p>Encriptar</p>
+            </button>
+            
+            <button id="decrypt-button" onclick="decrypt()">
+                <p>Desencriptar</p>
+            </button>             
+            </div>
+        </section>
+        
+        <section class="output__section">
+            <img src="assets/img/person-waiting.png" alt="Persona esperando a que realices alguna acción" id="waitng-img">
+            
+            <textarea id="output-area" rows="30" cols="70" placeholder="Ningún mensaje fue encontrado Ingresa el texto que desees encriptar o desencriptar."></textarea>
+            
+            <!-- <h3 id="no-input-title">Ningún mensaje fue encontrado</h3> -->
+            
+            <!-- <p id="no-input-text">Ingresa el texto que desees encriptar o desencriptar.</p> -->
+            
+            <button id="copy-button" onclick="copy()">
+                <p>Copiar</p>
+            </button>
+        </section>
+    </div>
 
-        
-        <div>
-            <img src="assets/img/exclamation-sing.png" alt="Signo de exclamación">
-            <p>Solo letras minúsculas y sin acentos.</p>
-        </div>
-        
-        <div>
-        <button id="encrypt-button" onclick="encrypt()">
-            <p>Encriptar</p>
-        </button>
-        
-        <button id="decrypt-button" onclick="decrypt()">
-            <p>Desencriptar</p>
-        </button>             
-        </div>
-    </section>
-    
-    <section class="output_section">
-        <img src="assets/img/person-waiting.png" alt="Persona esperando a que realices alguna acción" id="waitng-img">
-        
-        <textarea id="output-area" rows="30" cols="70" placeholder="Ningún mensaje fue encontrado Ingresa el texto que desees encriptar o desencriptar."></textarea>
-        
-        <!-- <h3 id="no-input-title">Ningún mensaje fue encontrado</h3> -->
-        
-        <!-- <p id="no-input-text">Ingresa el texto que desees encriptar o desencriptar.</p> -->
-        
-        <button id="copy-button" onclick="copy()">
-            <p>Copiar</p>
-        </button>
-    </section>
-    
     <footer class="footer">
         <p>Desarrollado por Karla Balderrama Loza - Alura Latam - ONE Grupo 7 - 2024</p>
     </footer>
