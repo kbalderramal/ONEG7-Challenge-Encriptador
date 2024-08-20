@@ -8,17 +8,22 @@
 </head>
 
 <body>
-    <header>
-        <img src="assets/img/alura-logo.png" alt="Alura logo">
+    <header class="header">
+        <div class="logo">
+            <img src="assets/img/alura-logo.png" alt="Alura logo" class="logo__img">
         
-        <h1>Challenge 1: Encriptador de texto</h1>
-        
-        <a href="https://github.com/kbalderramal/ONEG7-Challenge-Encriptador">Ir a portafolio del programa</a>
+            <h1 class="main__title">Challenge 1: Encriptador de texto</h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="https://github.com/kbalderramal/ONEG7-Challenge-Encriptador" class="navbar__link">Proyecto en Github</a>
+
+            <a href="https://kbalderramal.github.io/Portafolio-ONEG7/index.html" class="navbar__link">Portafolio ONE</a>        
+        </nav>
     </header>
     
-    <section>
+    <section class="input_section">
         <div>
-        
             <textarea id="input-text" rows="30" cols="70" placeholder="Ingrese el texto aqui"></textarea>            
         </div>
 
@@ -39,7 +44,7 @@
         </div>
     </section>
     
-    <section>
+    <section class="output_section">
         <img src="assets/img/person-waiting.png" alt="Persona esperando a que realices alguna acción" id="waitng-img">
         
         <textarea id="output-area" rows="30" cols="70" placeholder="Ningún mensaje fue encontrado Ingresa el texto que desees encriptar o desencriptar."></textarea>
@@ -53,7 +58,7 @@
         </button>
     </section>
     
-    <footer>
+    <footer class="footer">
         <p>Desarrollado por Karla Balderrama Loza - Alura Latam - ONE Grupo 7 - 2024</p>
     </footer>
 </body>

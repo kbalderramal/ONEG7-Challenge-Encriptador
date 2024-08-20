@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
+/* Reseteo */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Varibles */
 :root{
     /* Paleta de colores */
     --white: #FFF;
@@ -17,9 +23,62 @@
     --dark-gray: #343A40;
     /* Tipografías */
     font-family: 'Inter', 'Arial', 'Helvetica', 'sans-serif';
+    background-color: var(--ligth-blue);    
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+/* Encabezado y barra de navegación */
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 0% 1.5% 0%;
+    color: var(--dark-blue);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    padding: 0% 2% 0% 0%;
+}
+
+.navbar__link{
+    margin-right: 2rem;
+    white-space: nowrap;
+}
+
+/* .navbar__link:hover{
+    border: 2px solid var(--dark-blue); 
+    border-radius: 4px; 
+} */
+
+/* .navbar__link:active{
+    color: var(--gray);
+} */
+
+/* sección del texto de entrada */
+.input_section{
+    background-color:violet ;
+
+}
+
+
+/* sección del texto de salida */
+.output_section{
+    background-color: palevioletred;
+
+}
+
+
+/* pie de pagina */
+.footer{
+    background-color: greenyellow;
+    text-align: center;
+    padding: 1vh;
 }
