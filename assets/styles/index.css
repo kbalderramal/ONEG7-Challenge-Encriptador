@@ -24,6 +24,7 @@ a{
     --dark-blue: #0A3871;
     --gray: #495057;
     --dark-gray: #343A40;
+    --hover-blue: #D8DFE8;
     /* Tipografías */
     font-family: 'Inter', 'Arial', 'Helvetica', 'sans-serif';
     background-color: var(--ligth-blue);    
@@ -110,7 +111,7 @@ a{
     padding: 1% 0% 10% 0%;
 }
 
-.inputs__text__area{
+#input-text-area{
     font-family: 'Inter', 'Arial', 'Helvetica', 'sans-serif';
     color: var(--dark-blue);
     border: none;
@@ -120,6 +121,7 @@ a{
     padding: 5%;
 }
 
+/* botones */
 .button__solid{
     background-color: var(--dark-blue);
     color: var(--white);
@@ -128,14 +130,22 @@ a{
     padding: 2% 8% 2% 8%;
 }
 
+.button__solid:hover {
+    background-color: var(--hover-blue);
+    color: var(--dark-blue);
+}
+
 .button__transparent{
-    background-color: var(--ligth-blue);
+    background-color: transparent;
     color: var(--dark-blue);
     border: solid var(--dark-blue);
     border-radius: 15px;
     padding: 2% 8% 2% 8%;
 }
 
+.button__transparent:hover{
+    background-color: var(--hover-blue);
+}
 
 /* sección del texto de salida */
 .output__section{
@@ -143,6 +153,15 @@ a{
     max-width: 30%;
 }
 
+#output-text-area{
+    font-family: 'Inter', 'Arial', 'Helvetica', 'sans-serif';
+    color: var(--dark-gray);
+    border: none;
+    background-color: var(--ligth-blue);
+    resize: none;
+    border-radius: 5%;
+    padding: 5%;
+}
 
 /* pie de pagina */
 .footer{
