@@ -66,19 +66,31 @@ a{
 /* cuerpo de la página */
 .main__box{
     display: flex;
-    justify-content: space-evenly;
-    margin: 1% 0% 0% 0%;
-    gap: 3%;
+    /* justify-content: space-evenly; */
+    margin: 1% 0% 0% 8%;
+    gap: 5%;
 }
 
 /* sección del texto de entrada */
 .input__section{
     background-color: greenyellow;
-    max-width: 60%;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.input__area{
+    max-width: 100%;
+}
+
+.details__buttons{
+    /* background-color: var(--ligth-blue); */
+    margin-top: auto; /* Pushes this element to the bottom */
+    padding: 10px; /* Optional padding for the bottom content */
 }
 
 .details{
-    background-color:cadetblue;
+    margin-top: auto;
     display: flex;
     color: var(--gray);
     gap: 1%;
@@ -91,11 +103,11 @@ a{
 }
 
 .buttons__area{
-    background-color: cadetblue;
+    margin-top: auto;
     max-width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding: 2% 0% 10% 0%;
+    padding: 1% 0% 10% 0%;
 }
 
 .inputs__text__area{
@@ -128,7 +140,7 @@ a{
 /* sección del texto de salida */
 .output__section{
     background-color: palevioletred;
-    max-width: 40%;
+    max-width: 30%;
 }
 
 

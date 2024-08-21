@@ -22,25 +22,27 @@
         </nav>
     </header>
     
-    <div class="main__box">
+    <main class="main__box">
         <section class="input__section">
             <div class="input__area">
                 <textarea id="input-text" rows="30" cols="70" placeholder="Ingrese el texto aqui" class="inputs__text__area"></textarea>            
             </div>
             
-            <div class="details">
-                <img src="assets/img/exclamation-sing.png" alt="Signo de exclamación" class="icon">
-                <p>Solo letras minúsculas y sin acentos.</p>
-            </div>
-            
-            <div class="buttons__area">
-            <button id="encrypt-button" onclick="encrypt()" class="button__solid">
-                <p>Encriptar</p>
-            </button>
-            
-            <button id="decrypt-button" onclick="decrypt()" class="button__transparent">
-                <p>Desencriptar</p>
-            </button>             
+            <div class="details__buttons">
+                <div class="details">
+                    <img src="assets/img/exclamation-sing.png" alt="Signo de exclamación" class="icon">
+                    <p>Solo letras minúsculas y sin acentos.</p>
+                </div>
+                
+                <div class="buttons__area">
+                <button id="encrypt-button" onclick="encrypt()" class="button__solid">
+                    <p>Encriptar</p>
+                </button>
+                
+                <button id="decrypt-button" onclick="decrypt()" class="button__transparent">
+                    <p>Desencriptar</p>
+                </button>             
+                </div>
             </div>
         </section>
         
@@ -57,7 +59,7 @@
                 <p>Copiar</p>
             </button>
         </section>
-    </div>
+    </main>
 
     <footer class="footer">
         <p>Desarrollado por Karla Balderrama Loza - Alura Latam - ONE Grupo 7 - 2024</p>
