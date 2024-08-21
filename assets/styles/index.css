@@ -77,8 +77,25 @@ a{
     max-width: 60%;
 }
 
-.input__area{
+.details{
+    background-color:cadetblue;
+    display: flex;
+    color: var(--gray);
+    gap: 1%;
+    font-size: smaller;
+    padding: 1% 1% 1% 1%;
+}
 
+.icon{
+    max-width: 3%;
+}
+
+.buttons__area{
+    background-color: cadetblue;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0% 10% 0%;
 }
 
 .inputs__text__area{
@@ -89,8 +106,24 @@ a{
     resize: none;
     border-radius: 5%;
     padding: 5%;
-    /* font-size: ; */
 }
+
+.button__solid{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: solid var(--dark-blue);
+    border-radius: 15px;
+    padding: 2% 8% 2% 8%;
+}
+
+.button__transparent{
+    background-color: var(--ligth-blue);
+    color: var(--dark-blue);
+    border: solid var(--dark-blue);
+    border-radius: 15px;
+    padding: 2% 8% 2% 8%;
+}
+
 
 /* sección del texto de salida */
 .output__section{
