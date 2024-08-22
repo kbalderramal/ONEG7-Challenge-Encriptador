@@ -5,7 +5,7 @@ let decryptText;
 // Obetener el mensaje ingresado en el textarea
 function getInput() {
     // Guardar el texto ingresado a traves del id de la etiqueta
-    inputMessage = document.getElementById("input-text").value;
+    inputMessage = document.getElementById("input-text-area").value;
     
     // Verificar el texto
     return inputValidation(inputMessage);
@@ -14,13 +14,12 @@ function getInput() {
 // Validar que el texto ingresado cumpla con los críterios establecidos en el reto
 function inputValidation(message) {
     // Expresión rgular que acepta solo números y letras minuscuals
-    const regex = /^[a-z0-9\s]+$/;
+    const regex = /^[a-z\s]+$/;
 
     // Probar le expresión y retornar el valor booleano correspondiente
     if (regex.test(message)){
         return true;
     }else{
-        // alert("Mensaje invalido\nIngrese solo letras minusculas o números.");
         return false;
     }
 }
@@ -30,7 +29,7 @@ function encrypt() {
 
     // Permitir la ejecución del resto de la función solo si se cumple con lo establecido
     if (!getInput()) {
-        alert("Mensaje inválido\nIngrese solo letras minúsculas o números.");
+        alert("Mensaje inválido\nIngrese solo letras minúsculas y no utilice acentos.");
         return;  // Detener la ejecución si el mensaje es inválido
     }
 
@@ -45,7 +44,7 @@ function encrypt() {
     encriptedText = encriptedText.replace(/u/g, "ufat");
 
     // Imprimir en el textarea correspondiente el resultado
-    document.getElementById("output-area").textContent = `${encriptedText}`; 
+    document.getElementById("output-text-area").textContent = `${encriptedText}`; 
 }
 
 // Desencriptar texto según los parámetros establecidos en el reto
@@ -66,13 +65,13 @@ function decrypt() {
     decryptText = decryptText.replace(/ufat/g, "u");
 
     // Imprimir en el textarea correspondiente el resultado
-    document.getElementById("output-area").textContent = `${decryptText}`; 
+    document.getElementById("output-text-area").textContent = `${decryptText}`; 
 }
 
 // Copiar a portapapeles el texto transformado
 function copy() {
     // Obtener el elemento textarea con el id "output-area"
-    let copyText = document.getElementById("output-area");
+    let copyText = document.getElementById("output-text-area");
 
     // Seleccionar el texto dentro del textarea
     copyText.select();
@@ -83,6 +82,8 @@ function copy() {
 
     // Copiar el texto seleccionado al portapapeles
     navigator.clipboard.writeText(copyText.value);
+
+    alert("Texto copiado con éxito.")
 }
 
 
@@ -93,9 +94,11 @@ function copy() {
 // [ x ] decrypt message function
 // [ x ] copy button function
 // [ ] cambiar a rojo el margen del textarea input en error y el texto de instucción
-// [ ] cambiar texto de color copiar a copiado tras seleccionarlo
+// [ ] verificar texto copiado con modal o alert
 // [ ] agregar disclaimer por fallos en la encriptación/desencriptación
 // [ ] agregar sección de comentarios
+// [ ] validar que el input no este vacio
+// [ ] cambiar el regex para que no acepte números
 
 
 
