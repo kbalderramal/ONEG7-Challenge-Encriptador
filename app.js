@@ -16,8 +16,8 @@ function inputValidation(message) {
     // Expresión rgular que acepta solo números y letras minuscuals
     const regex = /^[a-z\s]+$/;
 
-    // Probar le expresión y retornar el valor booleano correspondiente
-    if (regex.test(message)){
+    // Probar le expresión y comprobar que el string no este vacio retornar el valor booleano correspondiente
+    if (regex.test(message) && message.trim().length > 0){
         return true;
     }else{
         return false;
