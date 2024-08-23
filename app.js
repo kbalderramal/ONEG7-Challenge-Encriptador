@@ -97,19 +97,3 @@ function copy() {
 
     alert("Texto copiado con éxito.")
 }
-
-// TODO: 
-// [ x ] get input function
-// [ x ] input validation function 
-// [ x ] encrypt text function
-// [ x ] decrypt message function
-// [ x ] copy button function
-// [ ] cambiar a rojo el margen del textarea input en error y el texto de instucción
-// [ x ] verificar texto copiado con modal o alert
-// [ ] agregar disclaimer por fallos en la encriptación/desencriptación
-// [ ] agregar sección de comentarios
-// [ x ] validar que el input no este vacio
-// [ x ] cambiar el regex para que no acepte números
-
-
-

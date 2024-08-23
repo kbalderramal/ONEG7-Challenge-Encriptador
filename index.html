@@ -50,17 +50,25 @@
             <div id="before-processing">
                 <img src="assets/img/person-waiting.png" alt="Persona esperando a que realices alguna acción" id="waitng-img">
 
-                <h3 id="no-input-title">Ningún mensaje fue encontrado</h3>
+                <div class="aditional__text">
+                    <h3 id="no-input-title">Ningún mensaje fue encontrado</h3>
             
-                <p id="no-input-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <p id="no-input-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                
             </div>
             
             <div id="afther-processing">
-                <textarea id="output-text-area" rows="30" cols="70" placeholder="Ningún mensaje fue encontrado Ingresa el texto que desees encriptar o desencriptar."></textarea>
                 
-                <button id="copy-button" onclick="copy()" class="button__transparent">
-                <p>Copiar</p>
+                <div class="results__div">
+                    <textarea id="output-text-area" rows="30" cols="70" placeholder="Ningún mensaje fue encontrado Ingresa el texto que desees encriptar o desencriptar."></textarea>
+
+                    <button id="copy-button" onclick="copy()" class="button__transparent ">
+                    <p>Copiar</p>
                 </button>
+
+                </div>
+                
             </div>
         </section>
         

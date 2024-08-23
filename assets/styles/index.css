@@ -67,14 +67,12 @@ a{
 /* cuerpo de la página */
 .main__box{
     display: flex;
-    justify-content:end;
-    margin: 1% 10% 0% 15%;
+    margin: 2% 10% 0% 15%;
     gap: 25%;
 }
 
 /* sección del texto de entrada */
 .input__section{
-    background-color: greenyellow;
     max-width: 70%;
     display: flex;
     flex-direction: column; 
@@ -117,6 +115,8 @@ a{
     border: none;
     background-color: var(--ligth-blue);
     resize: none;
+    width: 100%;
+    box-sizing: border-box;
     border-radius: 5%;
     padding: 5%;
 }
@@ -149,10 +149,16 @@ a{
 
 /* sección del texto de salida */
 .output__section{
-    background-color: palevioletred;
+    background-color: var(--white);
     max-width: 30%;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* textarea y boton copiar  */
 #output-text-area{
     font-family: 'Inter', 'Arial', 'Helvetica', 'sans-serif';
     color: var(--dark-gray);
@@ -161,6 +167,15 @@ a{
     resize: none;
     border-radius: 5%;
     padding: 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* imagen y texto adicional */
+#waitng-img{
+    display: flex;
+    justify-content: center;
+    margin: 0% 0% 10% 0%;
 }
 
 /* ocultar por defectos los estilos de la imagen y texto adicional de la sección output */
@@ -168,15 +183,37 @@ a{
     display: none;
 }
 
+.results__div{
+    display: table;
+
+}
+
+.aditional__text{
+    display:block;
+    justify-content: center;
+}
+
+#no-input-title{
+    display: flex;
+    justify-content: center;
+    margin: 0% 0% 5% 0%;
+}
+
+#no-input-text{
+    font-size: smaller;
+}
+
+#copy-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* pie de pagina */
 .footer{
     background-color: var(--ligth-blue);
     color: var(--gray);
     text-align: center;
+    font-size: small;
     padding: 1.5vh;
 }
-
-/* TODO */
-/* [ ] decoración al hover de los enlaces y botones */
-/* [ ] responsividad */
-/* [ ] sombreado del header */
