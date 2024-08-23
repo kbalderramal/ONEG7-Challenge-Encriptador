@@ -67,9 +67,9 @@ a{
 /* cuerpo de la página */
 .main__box{
     display: flex;
-    /* justify-content: space-evenly; */
-    margin: 1% 0% 0% 8%;
-    gap: 5%;
+    justify-content:end;
+    margin: 1% 10% 0% 15%;
+    gap: 25%;
 }
 
 /* sección del texto de entrada */
@@ -161,6 +161,11 @@ a{
     resize: none;
     border-radius: 5%;
     padding: 5%;
+}
+
+/* ocultar por defectos los estilos de la imagen y texto adicional de la sección output */
+#afther-processing{
+    display: none;
 }
 
 /* pie de pagina */

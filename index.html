@@ -47,18 +47,23 @@
         </section>
         
         <section class="output__section">
-            <img src="assets/img/person-waiting.png" alt="Persona esperando a que realices alguna acción" id="waitng-img">
+            <div id="before-processing">
+                <img src="assets/img/person-waiting.png" alt="Persona esperando a que realices alguna acción" id="waitng-img">
+
+                <h3 id="no-input-title">Ningún mensaje fue encontrado</h3>
             
-            <textarea id="output-text-area" rows="30" cols="70" placeholder="Ningún mensaje fue encontrado Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                <p id="no-input-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
             
-            <!-- <h3 id="no-input-title">Ningún mensaje fue encontrado</h3> -->
-            
-            <!-- <p id="no-input-text">Ingresa el texto que desees encriptar o desencriptar.</p> -->
-            
-            <button id="copy-button" onclick="copy()" class="button__transparent">
+            <div id="afther-processing">
+                <textarea id="output-text-area" rows="30" cols="70" placeholder="Ningún mensaje fue encontrado Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                
+                <button id="copy-button" onclick="copy()" class="button__transparent">
                 <p>Copiar</p>
-            </button>
+                </button>
+            </div>
         </section>
+        
     </main>
 
     <footer class="footer">

@@ -45,6 +45,12 @@ function encrypt() {
 
     // Imprimir en el textarea correspondiente el resultado
     document.getElementById("output-text-area").textContent = `${encriptedText}`; 
+    
+    // Mostrar textarea de la salida y botón de copiar
+    document.getElementById('afther-processing').style.display= 'block';
+
+    // Ocultar imagen y texto adicional
+    document.getElementById('before-processing').style.display= 'none';
 }
 
 // Desencriptar texto según los parámetros establecidos en el reto
@@ -66,6 +72,12 @@ function decrypt() {
 
     // Imprimir en el textarea correspondiente el resultado
     document.getElementById("output-text-area").textContent = `${decryptText}`; 
+
+    // Mostrar textarea de la salida y botón de copiar
+    document.getElementById('afther-processing').style.display= 'block';
+    
+    // Ocultar imagen y texto adicional
+    document.getElementById('before-processing').style.display= 'none';
 }
 
 // Copiar a portapapeles el texto transformado
@@ -86,7 +98,6 @@ function copy() {
     alert("Texto copiado con éxito.")
 }
 
-
 // TODO: 
 // [ x ] get input function
 // [ x ] input validation function 
@@ -94,11 +105,11 @@ function copy() {
 // [ x ] decrypt message function
 // [ x ] copy button function
 // [ ] cambiar a rojo el margen del textarea input en error y el texto de instucción
-// [ ] verificar texto copiado con modal o alert
+// [ x ] verificar texto copiado con modal o alert
 // [ ] agregar disclaimer por fallos en la encriptación/desencriptación
 // [ ] agregar sección de comentarios
-// [ ] validar que el input no este vacio
-// [ ] cambiar el regex para que no acepte números
+// [ x ] validar que el input no este vacio
+// [ x ] cambiar el regex para que no acepte números
 
 
 
