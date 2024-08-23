@@ -94,8 +94,8 @@ body {
 }
 
 .details__buttons{
-    margin-top: auto; /* Pushes this element to the bottom */
-    padding: 10px; /* Optional padding for the bottom content */
+    margin-top: auto; 
+    padding: 10px; 
 }
 
 .details{
@@ -164,8 +164,11 @@ body {
     border-radius: 30px;
     box-shadow: 0 5px 20px var(--gray);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start; /* Asegura que el contenido esté alineado al principio */
     align-items: center;
+    padding: 0; /* Elimina el padding interno */
+    margin: 0% 0% 2% 0%;
 }
 
 /* textarea y boton copiar  */
@@ -173,19 +176,22 @@ body {
     font-family: 'Inter', 'Arial', 'Helvetica', 'sans-serif';
     color: var(--dark-gray);
     border: none;
-    background-color: var(--ligth-blue);
+    background-color: var(--white);
     resize: none;
     border-radius: 5%;
-    padding: 5%;
     width: 100%;
+    max-height: fit-content;
     box-sizing: border-box;
+    padding: 5%; /* Reduce el padding para evitar espacios grandes */
+    margin: 0; /* Elimina cualquier margen */
 }
 
 /* imagen y texto adicional */
 #waitng-img{
     display: flex;
     justify-content: center;
-    margin: 0% 0% 10% 0%;
+    align-items: center;
+    margin: 40% 0% 10% 0%;
 }
 
 /* ocultar por defectos los estilos de la imagen y texto adicional de la sección output */
@@ -194,12 +200,16 @@ body {
 }
 
 .results__div{
-    display: table;
-
+    /* display: table; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Asegura que no haya padding alrededor del textarea */
 }
 
 .aditional__text{
-    display:block;
+    display: block;
     justify-content: center;
 }
 
@@ -216,7 +226,8 @@ body {
 #copy-button{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    margin: 35% 0% 0% 0%;
 }
 
 /* pie de pagina */
