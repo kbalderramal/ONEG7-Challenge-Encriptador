@@ -37,10 +37,6 @@ body {
     min-height: 100vh;
 }
 
-.main__content {
-    flex: 1;
-}
-
 /* Encabezado y barra de navegación */
 .header{
     display: flex;
@@ -79,6 +75,11 @@ body {
     display: flex;
     margin: 2% 10% 0% 15%;
     gap: 25%;
+    flex: 1;    
+}
+
+.main__box:first-child{
+    margin-right: auto;
 }
 
 /* sección del texto de entrada */
